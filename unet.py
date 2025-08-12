@@ -285,7 +285,7 @@ if __name__ == "__main__":
                 choice = False
 
         # Load input volume
-        input = np.load(base + f"ultrasound/{file}")
+        input = np.load(base + f"input_images/{file}")
         input = input / np.max(input)
         input = torch.from_numpy(input).unsqueeze(0).unsqueeze(0).float()
 
